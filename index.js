@@ -34,19 +34,50 @@ app.get('/', (req, res) => {
 
 
 app.get('/getdata', (req,res) => {
-    res.sendFile(path.join(__dirname + '/public/datagotten.html')); 
+    
+    let html = `<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        
+        <title></title>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/style.css">
+    </head>
+    <body>
+        <h2>This are the data submitted by get</h2>
+        <p>${req.query.name}</p>
+        <p>${req.query.surname}</p>
+    
+    </body>
+    </html>`;
+    
+    res.send(html); 
 });
 
 app.post('/postdata', (req, res) => {
 
-
+    let html = `<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        
+        <title></title>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/style.css">
+    </head>
+    <body>
+        <h2>This are the data submitted by post</h2>
+        <p>${req.body.name}</p>
+        <p>${req.body.surname}</p>
+    
+    </body>
+    </html>`;
+    
+    res.send(html); 
 
 });
 
 app.put('/putdata', (req, res) => {
-
-
-
+    
 });
 
 app.delete('/deletedata', (req, res) => {

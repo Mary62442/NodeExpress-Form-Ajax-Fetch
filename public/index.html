@@ -9,93 +9,78 @@
 
 </head>
 <body>
-    <div class = "container-forms">
     <h1>Examples of get and post methods in HTML forms</h1>
-    <h2>This is a form with method get</h2>
-        <form action="/getdata" method="get">
-            
-            <p>Name</p>
-            <input name="name" type="text">
-            <br/>
-            
-            <p>Surname</p>
-            <input name="surname" type="text">
-            
-            <input type="submit" value="submit">
-            
-        </form>
-    <h2>This is a form with method post</h2>
-        <form action="/postdata" method="post">
-            
-            <p>Name</p>
-            <input name="name" type="text">
-            <br/>
-            
-            <p>Surname</p>
-            <input name="surname" type="text">
-        
-            <input type="submit" value="submit">            
-        
-        </form>   
+    <div class = "container-forms">        
+        <div>
+            <h2>Form with method get</h2>
+            <form action="/getdata" method="get">                
+                <p>Name</p>
+                <input name="name" type="text">
+                <br/>                
+                <p>Surname</p>
+                <input name="surname" type="text">                
+                <input type="submit" value="Get data">                
+            </form>
+        </div>
+        <div>
+            <h2>Form with method post</h2>
+            <form action="/postdata" method="post">                
+                <p>Name</p>
+                <input name="name" type="text">
+                <br/>                
+                <p>Surname</p>
+                <input name="surname" type="text">            
+                <input type="submit" value="Get data">            
+            </form>  
+        </div> 
     </div>  
+    <h1>Examples of get and post Ajax calls</h1>
     <div class="container-ajax" >
-        <h1>Examples of get and post Ajax calls</h1>
-        <h2>This is a get ajax</h2>
-
-        <p>Name</p>
-        <input id="nameGet" name="name" type="text">
-        <br/>
-        
-        <p>Surname</p>
-        <input id="surnameGet" name="surname" type="text">
-
-        <button onClick="getData()">Get data</button>
-        <div id = "resultGet"></div>
-
-        <h2>This is a post ajax</h2>
-        <p>Name</p>
-        <input id="namePost" name="name" type="text">
-        <br/>
-        
-        <p>Surname</p>
-        <input id="surnamePost" name="surname" type="text">
-
-        <button onClick="postData()">Get data</button>
-        <div id = "resultPost"></div>
-
+        <div>
+            <h2>Ajax get</h2>
+            <p>Name</p>
+            <input id="nameGet" name="name" type="text">
+            <br/>            
+            <p>Surname</p>
+            <input id="surnameGet" name="surname" type="text">
+            <button onClick="getData()">Get data</button>
+            <div id = "resultGet"></div>
+        </div>
+        <div>
+            <h2>Ajax post</h2>
+            <p>Name</p>
+            <input id="namePost" name="name" type="text">
+            <br/>            
+            <p>Surname</p>
+            <input id="surnamePost" name="surname" type="text">
+            <button onClick="postData()">Get data</button>
+            <div id = "resultPost"></div>
+        </div>
     </div> 
 
+    <h1>Examples of get and post fetch functions</h1>
+
     <div class="container-fetch" >
-            <h1>Examples of get and post fetch functions</h1>
-            <h2>This is a fetch get</h2>
-    
+        <div>
+            <h2>Fetch get</h2>    
             <p>Name</p>
             <input id="nameGetFetch" name="name" type="text">
-            <br/>
-            
+            <br/>            
             <p>Surname</p>
-            <input id="surnameGetFetch" name="surname" type="text">
-    
+            <input id="surnameGetFetch" name="surname" type="text">    
             <button onClick="fetchGetData()">Get data</button>
             <div id = "resultGetFetch"></div>
-
-
-
-
-
-
-    
-            <h2>This is a fetch post</h2>
+        </div>
+        <div>    
+            <h2>Fetch post</h2>
             <p>Name</p>
             <input id="namePostFetch" name="name" type="text">
-            <br/>
-            
+            <br/>            
             <p>Surname</p>
-            <input id="surnamePostFetch" name="surname" type="text">
-    
+            <input id="surnamePostFetch" name="surname" type="text">    
             <button onClick="fetchPostDataJson()">Get data</button>
             <div id = "resultPostFetch"></div>
-
+        </div>
 
             <!-- <h2>This is a fetch post FormData</h2>
             <p>Name</p>
@@ -108,9 +93,7 @@
             <button onClick="fetchPostDataFormData()">Get data</button>
             <div id = "resultPostFetchFormData"></div> -->
     
-        </div> 
-
-
+    </div> 
     <script src="/scripts/appcore.js"></script>
 </body>
 </html>

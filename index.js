@@ -44,7 +44,7 @@ app.get('/getdata', (req,res) => {
         <link rel="stylesheet" type="text/css" href="/style.css">
     </head>
     <body>
-        <h2>This are the data submitted by get</h2>
+        <h2>Data submitted by get method in a form</h2>
         <p>${req.query.name}</p>
         <p>${req.query.surname}</p>
     
@@ -58,7 +58,7 @@ app.get('/getdataasync', (req,res) => {
     
     let html = `
     <div id = "partial-result-get">
-        <h2>This are the data submitted by ajax get</h2>
+        <h2>Data submitted by ajax get</h2>
         <p>${req.query.name}</p>
         <p>${req.query.surname}</p>
     </div>`;
@@ -70,7 +70,7 @@ app.get('/getdataasyncfetch', (req,res) => {
     
     let html = `
     <div id = "partial-result-get">
-        <h2>This are the data submitted by fetch get</h2>
+        <h2>Data submitted by fetch get</h2>
         <p>${req.query.name}</p>
         <p>${req.query.surname}</p>
     </div>`;
@@ -84,7 +84,7 @@ app.post('/postdataasync', (req,res) => {
     
     let html = `
     <div id = "partial-result-post">
-        <h2>This are the data submitted by ajax post</h2>
+        <h2>Data submitted by ajax post</h2>
         <p>${req.body.name}</p>
         <p>${req.body.surname}</p>
     </div>`;
@@ -96,7 +96,7 @@ app.post('/postdataasyncfetch', (req,res) => {
     
     let html = `
     <div id = "partial-result-post">
-        <h2>This are the data submitted by ajax post</h2>
+        <h2>Data submitted by ajax post</h2>
         <p>${req.body.name}</p>
         <p>${req.body.surname}</p>
     </div>`;
@@ -115,7 +115,7 @@ app.post('/postdata', (req, res) => {
         <link rel="stylesheet" type="text/css" href="/style.css">
     </head>
     <body>
-        <h2>This are the data submitted by post</h2>
+        <h2>Data submitted by method post in a form</h2>
         <p>${req.body.name}</p>
         <p>${req.body.surname}</p>
     

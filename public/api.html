@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body ng-app="api" ng-controller="apiCtrl as vm">
+    <h1 class="api-title">Maria's Rest APIs</h1>
+
+    <!-- <div>{{vm.test}}</div>
+    <div>{{vm.title}}</div>
+    <div>{{vm.myText}}</div>  
+    <input type="text" ng-model="vm.myText">  -->
+    <div class = "apis">
+        <p>The following are the routes:</p>
+        <ul>
+            <li>/flowers to get all flowers in a JSON document from my MongoDB</li>
+            <li>/updateflowernotes to post flower notes in my MongoDB</li>
+            <li>/putlisttoredis to put a list to my RedisDB </li>
+            <li>/putsettoredis to put a set to my RedisDB</li>
+            <li>/puthashtoredis to put a hash table to my RedisDB</li>
+            <li>/putzsettoredis to put a zset to my RedisDB</li>
+            <li>/putstringtoredis to put strings to my Redis DB</li>
+        
+        </ul>
+    </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+        <script src="/scripts/appcore.js"></script>
+
+</body>
+</html>

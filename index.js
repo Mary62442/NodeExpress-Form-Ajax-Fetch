@@ -54,6 +54,56 @@ app.get('/getdata', (req,res) => {
     res.send(html); 
 });
 
+app.get('/getdataasync', (req,res) => {
+    
+    let html = `
+    <div id = "partial-result-get">
+        <h2>This are the data submitted by ajax get</h2>
+        <p>${req.query.name}</p>
+        <p>${req.query.surname}</p>
+    </div>`;
+    
+    res.send(html); 
+});
+
+app.get('/getdataasyncfetch', (req,res) => {
+    
+    let html = `
+    <div id = "partial-result-get">
+        <h2>This are the data submitted by fetch get</h2>
+        <p>${req.query.name}</p>
+        <p>${req.query.surname}</p>
+    </div>`;
+    
+    res.send(JSON.stringify(html)); 
+});
+
+
+
+app.post('/postdataasync', (req,res) => {
+    
+    let html = `
+    <div id = "partial-result-post">
+        <h2>This are the data submitted by ajax post</h2>
+        <p>${req.body.name}</p>
+        <p>${req.body.surname}</p>
+    </div>`;
+    
+    res.send(html); 
+});
+
+app.post('/postdataasyncfetch', (req,res) => {
+    
+    let html = `
+    <div id = "partial-result-post">
+        <h2>This are the data submitted by ajax post</h2>
+        <p>${req.body.name}</p>
+        <p>${req.body.surname}</p>
+    </div>`;
+    
+    res.send(JSON.stringify(html)); 
+});
+
 app.post('/postdata', (req, res) => {
 
     let html = `<html xmlns="http://www.w3.org/1999/xhtml">
@@ -76,16 +126,7 @@ app.post('/postdata', (req, res) => {
 
 });
 
-app.put('/putdata', (req, res) => {
-    
-});
 
-app.delete('/deletedata', (req, res) => {
-
-
-
-
-});
 
 app.listen(port, ip);
 console.log('Server running on http://%s:%s', ip, port,"Process n." ,process.pid);

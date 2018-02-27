@@ -1,31 +1,20 @@
 body {
 	margin:0;
 	padding:0;
-	background-color:#321746;
+	background-color:#173146;
 	font-family: 'Source Sans Pro', sans-serif;
-	color:#f2e2ff;
+	color:#bdd3e4;
 }
-.api-title {
-	text-align:center;	
+.container-forms {
+	padding-left:1em;
 }
-
-.apis {
-	font-size:1.2em;
-	text-align:center;
+.container-ajax {
+	padding-left:1em;
 }
 
-.apis > p {
-	font-weight:bold;
-}
+.container-fetch {
 
-.apis > ul {
-	list-style-type: none;
-	padding:0;
-}
+	padding-left:1em;
+	background-color:blue;
 
-.apis > ul >li {
-	padding: 1em;
-	border-bottom:1px solid #574167;
-	width:50%;
-	margin:0 auto;
 }
